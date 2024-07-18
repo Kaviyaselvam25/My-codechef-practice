@@ -1,0 +1,64 @@
+IPL Ticket Rush
+DAIICT college students want to attend an IPL match.
+
+A total of 
+𝑁
+N students from the college want to go while only 
+𝑀
+M tickets are available for the match.
+
+Determine how many students won't be able to book tickets.
+
+Input Format
+The first line of input will contain a single integer 
+𝑇
+T, denoting the number of test cases.
+Each test case consists of two space-separated integers 
+𝑁
+N and 
+𝑀
+M — the number of students wants to go and the total number of tickets available, respectively.
+Output Format
+For each test case, output on a new line the number of students who won't be able to book tickets.
+
+Constraints
+1
+≤
+𝑇
+≤
+1000
+1≤T≤1000
+1
+≤
+𝑁
+,
+𝑀
+≤
+1
+0
+5
+1≤N,M≤10 
+5
+ 
+Sample 1:
+Input
+Output
+4
+5 3
+5 7
+4 1
+8 8
+2
+0
+3
+0
+
+output:
+# cook your dish here
+n=int(input())
+for i in range(n):
+    m,n=map(int,input().split())
+    if(n>=m):
+        print(0)
+    else:
+        print(m-n)
