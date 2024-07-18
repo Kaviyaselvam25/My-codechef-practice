@@ -1,0 +1,63 @@
+The working hours of Chef’s kitchen are from 
+𝑋
+X pm to 
+𝑌
+Y pm 
+(
+1
+≤
+𝑋
+<
+𝑌
+≤
+12
+)
+(1≤X<Y≤12).
+
+Find the number of hours Chef works.
+
+Input Format
+The first line of input will contain a single integer 
+𝑇
+T, denoting the number of test cases.
+Each test case consists of two space-separated integers 
+𝑋
+X and 
+𝑌
+Y — the starting and ending time of working hours respectively.
+Output Format
+For each test case, output on a new line, the number of hours Chef works.
+
+Constraints
+1
+≤
+𝑇
+≤
+100
+1≤T≤100
+1
+≤
+𝑋
+<
+𝑌
+≤
+12
+1≤X<Y≤12
+Sample 1:
+Input
+Output
+4
+1 2
+3 7
+9 11
+2 10
+1
+4
+2
+8
+solution:
+# cook your dish here
+n=int(input())
+for i in range(n):
+    x,y=map(int,input().split())
+    print(y-x)
