@@ -1,0 +1,33 @@
+Right There
+If you wanna party, if you, if you wanna party
+Then put your hands up
+
+Chef wants to host a party with a total of 
+𝑁
+N people.
+However, the party hall has a capacity of 
+𝑋
+X people. Find whether Chef can host the party.
+
+Input Format
+The first line of input will contain a single integer 
+𝑇
+T, denoting the number of test cases.
+Each test case consists of two space-separated integers 
+𝑁
+N and 
+𝑋
+X — the total number of people and the capacity of the party hall.
+Output Format
+For each test case, output on a new line, YES, if Chef can host the party and NO otherwise.
+
+Each character of the output may be printed in either uppercase or lowercase. That is, the strings NO, no, nO, and No will be treated as equivalent.
+SOLUTION:
+# cook your dish here
+n=int(input())
+for i in range(n):
+    x,y=map(int,input().split())
+    if y>=x:
+        print("YES")
+    else:
+        print("NO")
