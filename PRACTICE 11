@@ -1,0 +1,71 @@
+Reach the Target
+There is a cricket match going on between two teams 
+𝐴
+A and 
+𝐵
+B.
+
+Team 
+𝐵
+B is batting second and got a target of 
+𝑋
+X runs. Currently, team 
+𝐵
+B has scored 
+𝑌
+Y runs. Determine how many more runs Team 
+𝐵
+B should score to win the match.
+
+Note: The target score in cricket matches is one more than the number of runs scored by the team that batted first.
+
+Input Format
+The first line of input will contain a single integer 
+𝑇
+T, denoting the number of test cases.
+Each test case consists of two space-separated integers 
+𝑋
+X and 
+𝑌
+Y, the target for team 
+𝐵
+B and the current score of team 
+𝐵
+B respectively.
+Output Format
+For each test case, output how many more runs team 
+𝐵
+B should score to win the match.
+
+Constraints
+1
+≤
+𝑇
+≤
+10
+1≤T≤10
+50
+≤
+𝑌
+<
+𝑋
+≤
+200
+50≤Y<X≤200
+Sample 1:
+Input
+Output
+4
+200 50
+100 99
+130 97
+53 51
+150
+1
+33
+2
+SOLUTION:
+n=int(input())
+for i in range(n):
+    x,y=map(int,input().split())
+    print(x-y)
